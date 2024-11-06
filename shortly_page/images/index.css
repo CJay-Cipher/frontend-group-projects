@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 0 10%;
+  border: 1px solid red;
+}
+nav a {
+  /* border: 1px solid; */
+}
+nav img {
+  height: 30px;
+}
+nav .left-nav {
+  display: flex;
+  flex: 3;
+}
+nav .left-nav a,
+nav .right-nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+nav .right-nav {
+  /* border: 1px solid red; */
+  display: flex;
+}
+nav .right-nav .signup {
+  background-color: #2eccd6;
+  border-radius: 120px;
+  width: 100px;
+  height: 35px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 200vh;
+    border: 1px solid brown;
+    margin: 50px 0; 
+}
+main .main-left{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid blue;
+    margin:50px 0 0 70px;
+    
+}
+main .main-left h1{
+  font-size: 50px;
+  font-weight: 800;
+}
+main .main-left p{
+  display: inline-block;
+  border: 1px solid;
+  padding: 0 6px 0 0;
+}
+main .main-left a{
+  text-decoration: none;
+  margin-top: 20px;
+  color: white;
+  background-color: #2eccd6;
+  border-radius: 90px;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+main .main-right img{
+border: 1px solid purple;
+width: 733px;
+height: 482px;
+}
