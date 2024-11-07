@@ -35,10 +35,10 @@ nav .sub-nav a {
     text-decoration: none;
 }
 
-nav .sub-nav button {
+/* nav .sub-nav button {
     /* border: 1px solid red; */
     /* height: 30px; */
-}
+
 
 nav>.sub-nav>.login {
     background-color: rgb(249, 246, 246);
@@ -99,7 +99,7 @@ main {
     align-items: center;
 }
 
-.mp {}
+/* .mp {} */
 
 .mp>.search-bar {
     background-image: linear-gradient(rgb(21, 21, 121), rgb(19, 20, 31), grey);
