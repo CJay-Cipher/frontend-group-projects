@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= NAV BAR ================= */
+nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 10%;
+    /* border: 1px solid red; */
+}
+
+nav img {
+    height: 40px;
+    margin-right: 50px;
+    /* border: 1px solid red; */
+}
+nav .left-nav {
+    flex: 3;
+    /* border: 1px solid blue; */
+}
+nav .left-nav a,
+nav .right-nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #828282;
+}
+nav .right-nav .signup {
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #2bd0d0;
+    /* border: 1px solid red; */
+}
+
+/* ================= TOP SECTION ================= */

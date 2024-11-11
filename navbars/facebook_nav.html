@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook navbar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            height: 60px;
+            padding: 0 1%;
+            gap: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 7px #dadada;
+            /* border: 1px solid blue; */
+        }
+
+        nav .left-nav {
+            /* max-width: 300px; */
+            display: flex;
+            align-items: center;
+            /* border: 1px solid blue; */
+        }
+
+        nav .left-nav img {
+            width: 45px;
+            margin-right: 10px;
+        }
+
+        nav .left-nav .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            border-radius: 30px;
+            background-color: #F0F2F5;
+        }
+
+        nav .left-nav .search-bar i {
+            font-size: 20px;
+        }
+
+        nav .left-nav input {
+            padding: 13px 40px 12px 12px;
+            border: none;
+            border-radius: 30px;
+            background-color: #F0F2F5;
+        }
+
+        nav .left-nav input:focus {
+            outline: none;
+        }
+
+
+        nav .middle-nav {
+            display: none;
+
+            /* border: 1px solid blue; */
+        }
+
+        nav .middle-nav i {
+            font-size: 30px;
+            margin: 0 5px;
+            padding: 9px 45px;
+            color: #646464;
+            border-radius: 20px;
+            cursor: pointer;
+            /* border: 1px solid red; */
+        }
+
+        nav .middle-nav i:hover {
+            color: #0866FF;
+            background-color: #ececec;
+        }
+
+        nav .middle-nav .active {
+            color: #0866FF;
+            border-radius: 0;
+            border-bottom: 3px solid #0866FF;
+        }
+
+        nav .middle-nav .active:hover {
+            background-color: #fff;
+        }
+
+        nav .right-nav {
+            width: 200px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            /* border: 1px solid blue; */
+        }
+
+        nav .right-nav img {
+            width: 20px;
+            margin: 0 5px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #D8DADF;
+        }
+
+        nav .right-nav img:hover {
+            background-color: #c3c3c7;
+        }
+
+        nav .right-nav .profile-pix {
+            padding: 0;
+            width: 40px;
+            display: none;
+        }
+
+
+        /* =============== MEDIA QUERY ================ */
+        /* @media (max-width: 1260px) {
+            nav .left-nav .search-bar {
+                padding: 12px;
+            }
+
+            nav .left-nav input {
+                display: none;
+            }
+            nav .middle-nav i {
+                padding: 9px 30px;
+            }
+        }
+        @media (max-width: 700px) {
+            nav .middle-nav {
+                display: none;
+            }
+        } */
+        @media (min-width: 700px) {
+            nav .middle-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            nav .right-nav .profile-pix {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="image/facebook-1-svgrepo-com.svg" alt="">
+            <div class="search-bar">
+                <i class='bx bx-search-alt-2'></i>
+                <input type="text" placeholder="Search Facebook">
+            </div>
+        </div>
+
+        <div class="middle-nav">
+            <i class='bx bxs-home active'></i>
+            <i class='bx bx-group'></i>
+            <i class='bx bx-tv'></i>
+            <i class='bx bx-store'></i>
+            <i class='bx bxs-group'></i>
+        </div>
+
+        <div class="right-nav">
+            <img src="image/grid-1526-svgrepo-com.svg" alt="">
+            <img src="image/messager-177-svgrepo-com.svg" alt="">
+            <img src="image/bell-svgrepo-com.svg" alt="">
+            <img src="image/my_image.jpg" class="profile-pix" alt="">
+        </div>
+    </nav>
+</body>
+
+</html>
