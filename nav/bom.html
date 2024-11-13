@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+            height: 57px;
+            font-family: sans-serif;
+        }
+
+        nav .left-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 300px;
+        }
+
+        nav .left-nav i {
+            color: white;
+            border: 1px solid white;
+            font-size: 25px;
+        }
+
+        nav .left-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            padding: 20px;
+        }
+
+        nav .left-nav a:hover {
+            background-color: white;
+            color: blueviolet;
+            overflow: hidden;
+        }
+
+        nav .left-nav .hbold {
+            font-weight: 600;
+        }
+
+        nav .right-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 300px;
+        }
+
+        nav .right-nav p {
+            color: white;
+        }
+
+        nav .right-nav .bx-chevron-down:hover {
+            background-color: grey;
+        }
+
+        nav .right-nav i {
+            color: white;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+        nav .right-nav i:hover {
+            background-color: black;
+            border-radius: 50%;
+            color: white;
+        }
+
+        nav .right-nav a {
+            text-decoration: none;
+            color: goldenrod;
+            border: 1px solid goldenrod;
+            font-size: 20px;
+            padding: 8px;
+            box-shadow: 2px grey;
+        }
+
+        nav .right-nav a:hover {
+            color: white;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <i class='bx bx-bold'></i>
+            <a class="hbold" href="#">Home</a>
+            <a href="#">Documentation</a>
+            <a href="#">Examples</a>
+            <a href="#">Icons</a>
+            <a href="#">Themes</a>
+            <a href="#">Expo</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="right-nav">
+            <p>v4.5</p><i class='bx bx-chevron-down'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-kubernetes'></i>
+            <i class='bx bxs-message-rounded-dots'></i>
+            <a href="#">Download</a>
+        </div>
+    </nav>
+</body>
+
+</html>

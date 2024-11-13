@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            background-color: black;
+            overflow: hidden;
+        }
+        nav .left-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+            padding-right: 200px;
+            height: 50px;
+        }
+        nav .left-nav img {
+            background-color: white;
+        }
+        nav .left-nav i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 2px;
+        }
+        nav .left-nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav .middle-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 100px;
+
+        }
+        nav .middle-nav a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            border-left: 1px solid white;
+        }
+        nav .middle-nav a:hover {
+            background-color: white;
+            color: black;
+            height: 50px;
+        }
+        nav .right-nav {
+            padding-left: 200px;
+        }
+        .right-nav input {
+            width: 300px;
+            height: 30px;
+            border: none;
+            background-image: url(/nav/img/bx-search.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-x: right;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="/nav/img/bbc-svgrepo-com.svg" alt="bbc-logo" height="68px">
+            <i class='bx bxs-user-circle'></i>
+            <a href="#">Sign in</a>
+        </div>
+        <div class="middle-nav">
+            <a href="#">News</a>
+            <a href="#">Sport</a>
+            <a href="#">Reel</a>
+            <a href="#">WorkLife</a>
+            <a href="#">Travel</a>
+            <a href="#">Future</a>
+            <a href="#">More</a>
+        </div>
+        <div class="right-nav">
+            <input type="search" placeholder="Search">
+        </div>
+    </nav>
+</body>
+
+</html>

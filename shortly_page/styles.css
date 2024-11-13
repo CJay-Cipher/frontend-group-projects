@@ -5,57 +5,63 @@
 }
 
 body {
-    background-image: linear-gradient(white, white, grey);
-    padding: 0 100px;
-    height: 100vh;
+    /* background-image: linear-gradient(white, white, grey); */
+    /* padding: 10px; */
+    /* height: 100vh; */
 }
-
+main > * {
+    padding: 100px;
+}
 nav {
-    margin-top: 50px;
 }
 
 nav .sub-nav {
-    /* border: 1px solid red; */
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    gap: 330px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
-nav .sub-nav .logo {
+.sub-nav .logo {
     /* border: 1px solid red; */
     font-weight: 700;
+    font-size: 30px;
+    margin: 20px;
+    padding-left: 50px;
+}
+.sub-nav .logo-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-nav .sub-nav a {
+.sub-nav a {
     /* border: 1px solid red; */
+    /* padding: 0 30px; */
     color: grey;
     text-decoration: none;
 }
-
-/* nav .sub-nav button {
-    /* border: 1px solid red; */
-    /* height: 30px; */
-
-
-nav>.sub-nav>.login {
+nav .sub-nav .login {
     background-color: rgb(249, 246, 246);
     font-size: 20px;
     font-weight: 500;
+    padding: 0;
     text-decoration: none;
     border-color: aliceblue;
 }
 
 nav .sub-nav .sign-up {
-    background-color: green;
-    font-size: 10px;
-    font-weight: 50px;
+    background-color: #2bd0d0;
+    font-size: 20px;
+    font-weight: 5px;
+    padding: 8px;
     color: white;
-    border-radius: 15px;
-    width: 70px;
-    height: 30px;
+    border-radius: 25px;
+    border: none;
     text-decoration: none;
 }
 .side-img {
@@ -68,12 +74,12 @@ nav .sub-nav .sign-up {
 }
 
 main {
-    display: block;
+    /* display: block; */
 }
 
 .mp {
     /* border: 1px solid red; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .mp h1 {
@@ -89,42 +95,133 @@ main {
 
 .mp>button {
     color: white;
-    background-color: green;
+    background-color: #2bd0d0;
     border-radius: 8px;
     font-size: 10px;
-    width: 100px;
+    width: 100px; 
     height: 30px;
     margin: 60px 0 100px 0;
     justify-content: space-around;
     align-items: center;
 }
-
-/* .mp {} */
-
 .mp>.search-bar {
-    background-image: linear-gradient(rgb(21, 21, 121), rgb(19, 20, 31), grey);
+    background-image: url(/shortly_page/images/bg-shorten-desktop.svg);
     align-items: center;
     justify-content: center;
-    padding: 0 80px;
+    padding: 60px;
     display: flex;
-    height: 100px;
+    height: 80px;
     gap: 10px;
+    background-color: #5f5285;
+    /* border: 1px solid red; */
+    border-radius: 8px;
 }
 
 .mp>.search-bar .bar {
     /* border: 1px solid red; */
-    /* margin-top: 30px; */
     border-radius: 5px;
-    /* outline: none; */
-    width: 400px;
-    height: 30px;
-    padding: 10px;
+    width: 700px;
+    height: 40px;
+    
 }
-
-.mp>.search-bar .but {
-    background-color: green;
+.mp>.search-bar a {
+    background-color: #2bd0d0;
+    text-decoration: none;
     color: white;
-    height: 30px;
-    width: 100px;
+    padding: 11px;
     border-radius: 5px;
+}
+.mp .advanced {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+}
+.mp .advanced h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    /* border: 1px solid red; */
+}
+.mp .advanced p {
+    margin-top: 0;
+    /* width: 300px; */
+    /* border: 1px solid red; */
+}
+.columns {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.columns-box {
+    width: 250px;
+    margin: 10px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+.columns .column1 {
+    min-height: 200px;
+}
+.columns .column2 {
+    min-height: 200px;
+}
+.columns .column3 {
+    min-height: 200px;
+}
+.boast {
+    background-image: url(/shortly_page/images/bg-shorten-desktop.svg);
+    height: 160px;
+    background-color: #5f5285;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.boast a {
+    text-decoration: none;
+    background-color: #2bd0d0;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+}
+.foot {
+    background-color: rgb(18, 18, 39);
+    width: 100%;
+    padding: 0;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    color: white;
+    font-size: 16px;
+}
+.foot .features {
+    display: flex;
+    flex-direction: column;
+
+}
+.foot .features a {
+    text-decoration: none;
+    color: white;
+}
+.foot .reasources {
+    display: flex;
+    flex-direction: column;
+}
+.foot .reasources a {
+    text-decoration: none;
+    color: white;
+}
+.foot .company {
+    display: flex;
+    flex-direction: column;
+}
+.foot .company a{
+    text-decoration: none;
+    color: white;
 }

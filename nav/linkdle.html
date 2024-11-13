@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdle</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 53px;
+        }
+
+        nav .left-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 540px;
+        }
+
+        nav .left-nav i {
+            font-size: 40px;
+            color: blue;
+            cursor: pointer;
+
+        }
+
+        nav .left-nav input {
+            width: 250px;
+            height: 30px;
+            background-image: url(/nav/img/bx-search.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-x: left;
+            background-size: 15px;
+        }
+
+        nav .right-nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-left: 540px;
+        }
+
+        nav .right-nav i {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        nav .right-nav i:hover {
+            background-color: rgb(109, 101, 101);
+            color: white;
+            border-radius: 50px;
+        }
+
+        nav .right-nav img {
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <i class='bx bxl-linkedin-square'></i>
+            <input type="search" placeholder="       Search">
+        </div>
+        <div class="right-nav">
+            <i class='bx bxs-home'></i>
+            <i class='bx bxs-group'></i>
+            <i class='bx bxs-briefcase'></i>
+            <i class='bx bxs-message-rounded-dots'></i>
+            <i class='bx bxs-bell'></i>
+            <img src="/nav/img/profile1.jpg" alt="profile picture" width="30px">
+            <i class='bx bxs-grid'></i>
+            <i class='bx bxl-youtube'></i>
+        </div>
+    </nav>
+</body>
+
+</html>

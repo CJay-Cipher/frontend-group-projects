@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid red; */
+            height: 56px;
+        }
+
+        nav .left-nav {
+            /* padding: 0 200px; */
+            /* border: 1px solid red; */
+        }
+
+        nav .left-nav img {
+            height: 150px;
+            width: 460px;
+            padding: 0 150px 0 0;
+        }
+
+        nav .search-nav {
+            padding: 0 200px;
+            /* border: 1px solid red; */
+        }
+
+        nav .search-nav input {
+            width: 300px;
+            height: 40px;
+            background-image: url(/nav/img/bx-search.svg);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position-y: center;
+            background-position-x: center;
+            border-radius: 5px;
+            text-align: center;
+            border: none;
+            box-shadow: -2px 2px 5px gray;
+        }
+        nav .search-nav input:focus {
+            outline: none;
+        }
+        nav .right-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 200px;
+
+        }
+
+        nav .right-nav img {
+            height: 20px;
+            padding: 10px;
+        }
+
+        nav .right-nav img:hover {
+            background-color: wheat;
+            border-radius: 50%;
+        }
+
+        nav .right-nav .profile {
+            border-radius: 50px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="/nav/img/instagram-svgrepo-com.svg" alt="name">
+        </div>
+        <div class="search-nav">
+            <input type="search" placeholder="Search">
+        </div>
+        <div class="right-nav">
+            <img src="/nav/img/home-svgrepo-com.svg" alt="">
+            <img src="/nav/img/telegram-svgrepo-com.svg" alt="">
+            <img src="/nav/img/compass-svgrepo-com.svg" alt="">
+            <img src="/nav/img/heart-svgrepo-com.svg" alt="like button">
+            <img class="profile" src="/nav/img/profile1.jpg" alt="profile picture">
+        </div>
+    </nav>
+</body>
+
+</html>
